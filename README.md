@@ -1,0 +1,2 @@
+# GridsomeTheme
+Gridsomeを使用して作成したブログのテーマ
