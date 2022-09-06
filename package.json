@@ -20,5 +20,9 @@
     "remark-inline-links": "^5.0.0",
     "remark-toc": "^7.1.0",
     "truncatise": "0.0.8"
+  },
+  "devDependencies": {
+    "sass": "^1.54.8",
+    "sass-loader": "^10.1.1"
   }
 }

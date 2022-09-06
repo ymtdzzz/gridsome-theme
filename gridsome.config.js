@@ -9,7 +9,7 @@ module.exports = {
   siteName: "Gridsome Flex Markdown Start",
   siteDescription: "My Starter",
   metadata: {
-    siteAuthor: "Me",
+    siteAuthor: "aaa",
     sitePublished: 2021,
     pages: [
       { title: "About me", link: "/pages/about/" },

@@ -1,5 +1,6 @@
 // CSS
-import "~/assets/stylesheet/style.less";
+// import "~/assets/stylesheet/style.less";
+import "~/assets/stylesheet/style.scss";
 import "~/assets/font-awesome/css/font-awesome.min.css";
 import "prismjs/themes/prism-tomorrow.css";
 import "prismjs/plugins/line-numbers/prism-line-numbers.css";

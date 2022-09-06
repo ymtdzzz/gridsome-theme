@@ -1,5 +1,5 @@
 <template>
-  <div style="display: contents">
+  <div>
     <g-link to="/">
       <g-image
         src="~/assets/img/profile.png"

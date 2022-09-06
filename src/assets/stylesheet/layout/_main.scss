@@ -1,0 +1,10 @@
+.l-main {
+    width: 100%;
+    background-color: yellow;
+}
+
+@media (min-width: 768px) {
+    .l-main {
+        padding-left: 300px;
+    }
+}
