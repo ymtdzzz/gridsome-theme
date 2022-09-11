@@ -1,11 +1,10 @@
 .l-footer {
-    background-color: $mainColor;
     color: white;
 }
 
 @include pc {
     .l-footer {
-        margin-left: $aside-wid;
-        min-width: 0;
+        margin-left: $aside-wid + 40px;
+        // min-width: 0;
     }
 }
