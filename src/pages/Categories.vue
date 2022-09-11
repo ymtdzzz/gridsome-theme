@@ -34,7 +34,7 @@ query {
 }
 </page-query>
 
-<style lang="scss">
+<style scoped lang="scss">
   ul {
     list-style: none;
     padding-left: 0;

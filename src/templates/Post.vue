@@ -26,7 +26,7 @@
         <h4 class="p-article-subttl">related-posts</h4>
         <ul class="related-posts">
           <li v-for="rel in related" :key="rel.id">
-            <g-link :to="rel.path">{{ rel.title }} </g-link>
+            <g-link :to="rel.path">{{ rel.title }}</g-link>
           </li>
         </ul>
       </div>

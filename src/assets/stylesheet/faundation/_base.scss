@@ -4,15 +4,22 @@ body {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     vertical-align: bottom;
 }
 
+//nomalize.css調整
 a {
     color: white;
     text-decoration: none;
     &:hover {
         color: #ccc;
     }
+}
+
+blockquote {
+    padding-left: 15px;
+    border-left: 3px solid #ccc;
+    color: #ccc;
 }
