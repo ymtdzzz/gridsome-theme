@@ -1,0 +1,13 @@
+.c-tag {
+    padding: 3px 5px;
+    color: white;
+    &:hover {
+        color: #ccc;
+    }
+    &--category {
+        background-color: $categolyColor;
+    }
+    &--tags {
+        background-color: $tagsColor;
+    }
+}

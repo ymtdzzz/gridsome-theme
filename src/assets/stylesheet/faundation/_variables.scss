@@ -1,0 +1,23 @@
+//PC表示
+$pc: 768px;
+
+@mixin pc {
+  @media screen and (min-width: ($pc)) {
+    @content;
+  }
+}
+
+//asideの幅
+$aside-wid: 200px;
+
+//色
+
+$mainColor: #0C2538;
+$articleColor: #0F2D44;
+$categolyColor: #284457;
+$tagsColor: #0D2739;
+$moreColor: #081620;
+
+//テキスト部分の行間の幅
+
+$lineHeight: 1.8rem;
