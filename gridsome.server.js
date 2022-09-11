@@ -37,7 +37,7 @@ module.exports = function(api) {
 
                   resolve(
                     truncatise(String(file), {
-                      TruncateLength: 4,
+                      TruncateLength: 2,
                       TruncateBy: "paragraphs",
                       Strict: false,
                       StripHTML: false,

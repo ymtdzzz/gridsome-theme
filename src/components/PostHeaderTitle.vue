@@ -1,5 +1,5 @@
 <template>
-  <span>Posté le {{ post.date }} dans <g-link :to="post.category.path" v-html="post.category.title"></g-link></span>
+  <span>Posted {{ post.date }} </span>
 </template>
 
 <script>

@@ -1,3 +1,11 @@
 .l-footer {
-    background-color: aquamarine;
+    background-color: $mainColor;
+    color: white;
+}
+
+@include pc {
+    .l-footer {
+        margin-left: $aside-wid;
+        min-width: 0;
+    }
 }

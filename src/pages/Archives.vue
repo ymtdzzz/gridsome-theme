@@ -1,14 +1,16 @@
 <template>
   <Layout>
     <article class="single">
-      <header><h1>Archives</h1></header>
-      <div>
-        <dl>
+      <header><h1 class="c-h1-pagettl">Archives</h1></header>
+      <div class="u-pages-space">
+        <dl class="u-color-white">
           <template v-for="(arr, date) in postGroupByDate">
-            <dt :key="date">{{ date }}</dt>
-            <dd v-for="post in arr" :key="post.node.id">
-              <g-link :to="post.node.path">{{ post.node.title }} </g-link>
-            </dd>
+            <div class="p-archives">
+              <dt :key="date" class="p-archives__date">{{ date }}</dt>
+              <dd v-for="post in arr" :key="post.node.id" class="p-archives__ttl u-hover-anm">
+                <g-link :to="post.node.path">{{ post.node.title }} </g-link>
+              </dd>
+            </div>
           </template>
         </dl>
       </div>

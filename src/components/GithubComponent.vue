@@ -42,7 +42,7 @@ export default {
     },
     theme: {
       type: String,
-      default: "github-light",
+      default: "boxy-light",
     },
     description: {
       type: String,

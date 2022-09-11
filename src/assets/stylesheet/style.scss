@@ -5,6 +5,7 @@
 // ========================================
 
 @import 'faundation/_reset.scss';
+@import 'faundation/_variables.scss';
 @import 'faundation/_base.scss';
 
 // ========================================
@@ -13,10 +14,32 @@
 
 @import 'layout/_aside.scss';
 @import 'layout/_wrapper.scss';
-@import 'layout/main.scss';
-@import 'layout/footer.scss'
+@import 'layout/_main.scss';
+@import 'layout/_footer.scss';
 
 
 // ========================================
 // object
 // ========================================
+
+@import 'object/project/_nav.scss';
+@import 'object/project/_social-item.scss';
+@import 'object/project/_prof.scss';
+@import 'object/project/_footer-text.scss';
+@import 'object/project/_post-header.scss';
+@import 'object/project/_readmore.scss';
+@import 'object/project/_time-to-read.scss';
+@import 'object/project/_summary.scss';
+@import 'object/project/_archives.scss';
+@import 'object/project/_article.scss';
+@import 'object/project/_about.scss';
+
+
+@import 'object/component/_tag.scss';
+@import 'object/component/_h1-title.scss';
+
+@import 'object/utility/_tag-space.scss';
+@import 'object/utility/_tag.scss';
+@import 'object/utility/_color-white.scss';
+@import 'object/utility/_pages-space.scss';
+@import 'object/utility/_hover.scss';

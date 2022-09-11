@@ -1,28 +1,28 @@
 <template>
   <Layout>
-    <article class="single">
+    <article class="single p-article-wrap u-color-white">
       <header>
-        <h1 v-html="$page.post.title"></h1>
-        <p>
+        <h1 v-html="$page.post.title" class="p-article-ttl"></h1>
+        <p class="p-article-date">
           <PostHeaderTitle :post="$page.post"></PostHeaderTitle>
         </p>
       </header>
 
-      <div v-html="$page.post.content"></div>
+      <div v-html="$page.post.content" class="p-article-text"></div>
 
       <div class="tag-cloud">
-        <p>
+        <p class="p-article-tags">
           <template v-for="tag in $page.post.tags">
-            <g-link :key="tag.id" :to="tag.path">{{ tag.title }}</g-link
+            <g-link :key="tag.id" :to="tag.path" class="c-tag c-tag--tags">#{{ tag.title }}</g-link
             >{{ " " }}
           </template>
         </p>
       </div>
-
-      <div class="related-posts">
-        <h4>Billets similaires</h4>
+      <hr/>
+      <div class="related-posts p-article-rel">
+        <h4 class="p-article-subttl">related-posts</h4>
         <ul class="related-posts">
-          <li v-for="rel in related" :key="rel.id">
+          <li v-for="rel in related" :key="rel.id" class="u-hover-anm">
             <g-link :to="rel.path">{{ rel.title }} </g-link>
           </li>
         </ul>
@@ -37,8 +37,8 @@
               :pathname="this.$route.path"
               :url="url"
               :issueTerm="$page.metadata.utterances.issueTerm"
-              :label="$page.metadata.utterances.label"
-            ></GithubComponent>
+              :label="$page.metadata.utterances.label">
+            </GithubComponent>
           </div>
         </div>
       </ClientOnly>

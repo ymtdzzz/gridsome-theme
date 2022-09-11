@@ -2,12 +2,14 @@
   <Layout>
     <article class="single">
       <header>
-        <h1>Tags</h1>
+        <h1 class="c-h1-pagettl">Tags</h1>
       </header>
-      <div>
+      <div class="u-pages-space">
         <ul class="list">
-          <li v-for="tag in $page.allTag.edges" :key="tag.node.id">
-            <g-link :to="tag.node.path">{{ tag.node.title }} </g-link> ({{ tag.node.belongsTo.totalCount }})
+          <li v-for="tag in $page.allTag.edges" :key="tag.node.id" class="u-tags">
+            <span class="c-tag c-tag--tags">
+              <g-link :to="tag.node.path"># {{ tag.node.title }} ({{ tag.node.belongsTo.totalCount }})</g-link>
+            </span>
           </li>
         </ul>
       </div>

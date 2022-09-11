@@ -1,16 +1,17 @@
 <template>
-  <div>
-    <g-link to="/">
-      <g-image
-        src="~/assets/img/profile.png"
-        :alt="$static.metadata.siteName"
-      ></g-image>
-    </g-link>
-    <h1>
+  <div class="p-prof-area u-hover-anm">
+    <div class="p-prof-img">
+      <g-link to="/">
+        <g-image
+          src="~/assets/img/profile.png"
+          :alt="$static.metadata.siteName"></g-image>
+      </g-link>
+    </div>
+    <h1 class="p-prof-sitename">
       <a href="/">{{ $static.metadata.siteName }}</a>
     </h1>
 
-    <p>{{ $static.metadata.siteDescription }}</p>
+    <p class="p-prof-desc">{{ $static.metadata.siteDescription }}</p>
   </div>
 </template>
 

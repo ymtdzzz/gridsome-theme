@@ -1,9 +1,12 @@
 <template>
-  <span
-    >Tags:
+  <span>
+    <!-- Tags: -->
     <template v-for="(tag, index) in post.tags">
-      <template v-if="index > 0">, </template>
-      <g-link :key="tag.id" :to="tag.path">{{ tag.title }}</g-link>
+      <g-link :key="tag.id" :to="tag.path" class="u-tags c-tag c-tag--tags">
+        <span>
+          #{{ tag.title }}
+        </span>
+      </g-link>
     </template>
   </span>
 </template>

@@ -1,16 +1,18 @@
 <template>
   <header>
-    <h2>
+    <h2 class="p-post-title u-hover-anm">
       <g-link :to="post.path" v-html="post.title"></g-link>
     </h2>
-    <p>
+    <p class="p-post-space">
       <PostHeaderTitle :post="post"></PostHeaderTitle>
-      •
-      <PostHeaderTags :post="post"></PostHeaderTags>
     </p>
-    <p>
+    <p class="p-post-space">
+      <span><g-link :to="post.category.path" v-html="post.category.title" class="c-tag c-tag--category u-tag-space"></g-link></span>
+      <span><PostHeaderTags :post="post"></PostHeaderTags></span>
+    </p>
+    <!-- <p>
       <PostHeaderTimeToRead :post="post"></PostHeaderTimeToRead>
-    </p>
+    </p> -->
   </header>
 </template>
 

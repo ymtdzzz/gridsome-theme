@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1 class="category-title text-center space-bottom">
+    <h1 class="c-h1-pagettl">
       # {{ $page.category.title }}
     </h1>
 

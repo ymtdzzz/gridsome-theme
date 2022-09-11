@@ -1,11 +1,11 @@
 <template>
   <Layout>
-    <article class="single">
+    <article class="single p-about-wrap">
       <header>
-        <h1 v-html="$page.page.title"></h1>
+        <h1 v-html="$page.page.title" class="c-h1-pagettl"></h1>
       </header>
 
-      <div v-html="$page.page.content"></div>
+      <div v-html="$page.page.content" class="p-about-text"></div>
     </article>
   </Layout>
 </template>

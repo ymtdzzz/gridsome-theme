@@ -1,9 +1,14 @@
-@media (min-width: 768px) {
+.l-aside {
+    padding: 20px;
+    &__inner {
+        text-align: center;
+    }
+}
+
+@include pc {
     .l-aside {
-        width: 300px;
+        width: $aside-wid;
         height: 100%;
         position: fixed;
-        background-color: pink;
-
     }
 }
