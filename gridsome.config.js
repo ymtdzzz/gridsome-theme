@@ -44,24 +44,6 @@ module.exports = {
       },
     },
     {
-      use: "@microflash/gridsome-plugin-feed",
-      options: {
-        contentTypes: ["Post"],
-        feedOptions: {
-          title: "Gridsome Flex Markdown Start",
-          description: "My Starter",
-        },
-        rss: {
-          enabled: true,
-          output: "/feed.xml",
-        },
-        atom: {
-          enabled: true,
-          output: "/feed.atom",
-        },
-      },
-    },
-    {
       use: "@gridsome/source-filesystem",
       options: {
         baseDir: "content/pages",

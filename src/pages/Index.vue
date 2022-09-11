@@ -2,10 +2,9 @@
   <Layout>
     <PostSummary v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
 
-    <Pager class="pagination" 
-      :info="$page.posts.pageInfo" 
-      linkClass="btn"
-      />
+    <Pager class="pagination p-pager"
+      :info="$page.posts.pageInfo"
+      linkClass="btn"/>
   </Layout>
 </template>
 

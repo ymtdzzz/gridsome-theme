@@ -4,7 +4,7 @@
 // foundation
 // ========================================
 
-@import 'faundation/_reset.scss';
+@import 'faundation/_normalize.css';
 @import 'faundation/_variables.scss';
 @import 'faundation/_base.scss';
 
@@ -33,10 +33,12 @@
 @import 'object/project/_archives.scss';
 @import 'object/project/_article.scss';
 @import 'object/project/_about.scss';
+@import 'object/project/_pager.scss';
 
 
 @import 'object/component/_tag.scss';
 @import 'object/component/_h1-title.scss';
+@import 'object/component/_sc-.scss';
 
 @import 'object/utility/_tag-space.scss';
 @import 'object/utility/_tag.scss';

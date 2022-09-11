@@ -2,7 +2,7 @@
   <Layout>
     <article class="single">
       <header>
-        <h1 class="c-h1-pagettl">Categories</h1>
+        <h1 class="c-h1-pagettl u-pages-ttl-space">Categories</h1>
       </header>
       <div class="u-pages-space">
         <ul class="list u-color-white">
@@ -33,3 +33,10 @@ query {
   }
 }
 </page-query>
+
+<style lang="scss">
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  </style>

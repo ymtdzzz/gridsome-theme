@@ -12,8 +12,11 @@
 
       <div class="tag-cloud">
         <p class="p-article-tags">
+          <template>
+            <span><g-link :to="$page.post.category.path" v-html="$page.post.category.title" class="c-tag c-tag--category u-tag-space"></g-link></span>
+          </template>
           <template v-for="tag in $page.post.tags">
-            <g-link :key="tag.id" :to="tag.path" class="c-tag c-tag--tags">#{{ tag.title }}</g-link
+            <g-link :key="tag.id" :to="tag.path" class="c-tag c-tag--tags u-tags-article">#{{ tag.title }}</g-link
             >{{ " " }}
           </template>
         </p>
@@ -22,7 +25,7 @@
       <div class="related-posts p-article-rel">
         <h4 class="p-article-subttl">related-posts</h4>
         <ul class="related-posts">
-          <li v-for="rel in related" :key="rel.id" class="u-hover-anm">
+          <li v-for="rel in related" :key="rel.id">
             <g-link :to="rel.path">{{ rel.title }} </g-link>
           </li>
         </ul>

@@ -2,7 +2,7 @@
   <Layout>
     <article class="single">
       <header>
-        <h1 class="c-h1-pagettl">Tags</h1>
+        <h1 class="c-h1-pagettl u-pages-ttl-space">Tags</h1>
       </header>
       <div class="u-pages-space">
         <ul class="list">

@@ -8,3 +8,11 @@ img {
     height: auto;
     vertical-align: bottom;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        color: #ccc;
+    }
+}

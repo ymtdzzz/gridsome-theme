@@ -1,0 +1,15 @@
+.u-sc {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 36px;
+    &-twitter {
+        background-color: #4da7de;
+    }
+    &-github {
+        background-color: #111010;
+    }
+}

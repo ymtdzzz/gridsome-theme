@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h2 class="p-post-title u-hover-anm">
+    <h2 class="p-post-title">
       <g-link :to="post.path" v-html="post.title"></g-link>
     </h2>
     <p class="p-post-space">

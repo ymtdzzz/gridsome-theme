@@ -1,11 +1,9 @@
 <template>
-  <div class="p-prof-area u-hover-anm">
+  <div class="p-prof-area">
     <div class="p-prof-img">
-      <g-link to="/">
         <g-image
           src="~/assets/img/profile.png"
           :alt="$static.metadata.siteName"></g-image>
-      </g-link>
     </div>
     <h1 class="p-prof-sitename">
       <a href="/">{{ $static.metadata.siteName }}</a>
