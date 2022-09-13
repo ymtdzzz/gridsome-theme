@@ -10,13 +10,13 @@ module.exports = {
   siteDescription: "エンジニア的なあれこれ",
   metadata: {
     siteAuthor: "ymtdzzz",
-    sitePublished: 2021,
+    sitePublished: 2022,
     pages: [
       { title: "About me", link: "/pages/about/" },
     ],
     socials: [
       { type: "twitter", link: "//twitter.com/ymtdzzz" },
-      { type: "github", link: "//github.com/phoenix741/" },
+      { type: "github", link: "//github.com/ymtdzzz" },
     ],
     utterances: {
       repo: "Manami04/Manami04.github.io",
