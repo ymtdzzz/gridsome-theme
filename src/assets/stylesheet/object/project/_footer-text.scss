@@ -1,4 +1,9 @@
 .p-footer-text {
-    padding-right: 70px;
     text-align: center;
+}
+
+@include pc {
+    .p-footer-text {
+        padding-right: 70px;
+    }
 }
