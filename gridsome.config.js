@@ -6,17 +6,17 @@
 
 module.exports = {
   siteUrl: "http://localhost:8080",
-  siteName: "ymtdzzz.dev",
-  siteDescription: "エンジニア的なあれこれ",
+  siteName: "sample.dev",
+  siteDescription: "サンプルテキスト",
   metadata: {
-    siteAuthor: "ymtdzzz",
+    siteAuthor: "Mr.sample",
     sitePublished: 2022,
     pages: [
       { title: "About me", link: "/pages/about/" },
     ],
     socials: [
-      { type: "twitter", link: "//twitter.com/ymtdzzz" },
-      { type: "github", link: "//github.com/ymtdzzz" },
+      { type: "twitter", link: "" },
+      { type: "github", link: "" },
     ],
     utterances: {
       repo: "Manami04/Manami04.github.io",
