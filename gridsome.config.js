@@ -5,30 +5,38 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteUrl: "http://localhost:8080",
-  siteName: "sample.dev",
-  siteDescription: "サンプルテキスト",
+  siteUrl: "https://ymtdzzz.dev",
+  siteName: "ymtdzzz.dev",
+  siteDescription: "エンジニア的なあれこれ",
   metadata: {
-    siteAuthor: "Mr.sample",
+    siteAuthor: "ymtdzzz",
     sitePublished: 2022,
     pages: [
       { title: "About me", link: "/pages/about/" },
     ],
     socials: [
-      { type: "twitter", link: "" },
-      { type: "github", link: "" },
+      { type: "github", link: "//github.com/ymtdzzz/" },
+      { type: "twitter", link: "//twitter.com/ymtdzzz" },
     ],
     utterances: {
-      repo: "Manami04/Manami04.github.io",
+      repo: "ymtdzzz/ymtdzzz-dev",
       issueTerm: "title",
-      label: "discussion",
+      label: "comment",
     },
   },
   plugins: [
     {
+      use: 'gridsome-plugin-gtm',
+      options: {
+        id: 'GTM-NCD96BC',
+        enabled: true,
+        debug: true
+      }
+    },
+    {
       use: "@gridsome/source-filesystem",
       options: {
-        baseDir: "content/posts",
+        baseDir: "../content/posts",
         path: "**/*.md",
         typeName: "Post",
         refs: {
@@ -46,7 +54,7 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        baseDir: "content/pages",
+        baseDir: "../content/pages",
         path: "*.md",
         typeName: "BlogPage",
       },
@@ -76,9 +84,10 @@ module.exports = {
   transformers: {
     remark: {
       plugins: [
+        'gridsome-plugin-remark-mermaid',
         ["@gridsome/remark-prismjs", { showLineNumbers: true }],
         "remark-inline-links",
-        ["remark-toc", { heading: "sommaire" }],
+        ["remark-toc", { heading: "Table of Contents" }],
         "remark-attr",
       ],
       config: {

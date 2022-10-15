@@ -1,9 +1,11 @@
 <template>
   <div class="p-prof-area">
     <div class="p-prof-img">
-        <g-image
-          src="~/assets/img/profile.png"
-          :alt="$static.metadata.siteName"></g-image>
+      <g-image
+        style="border-radius: 50%"
+        src="~/assets/img/author.jpeg"
+        :alt="$static.metadata.siteName"
+      ></g-image>
     </div>
     <h1 class="p-prof-sitename">
       <a href="/">{{ $static.metadata.siteName }}</a>
@@ -27,3 +29,4 @@ export default {
   props: ["showTitle"],
 };
 </script>
+

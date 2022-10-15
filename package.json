@@ -12,6 +12,8 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-gtm": "^0.1.1",
+    "gridsome-plugin-remark-mermaid": "^1.0.1",
     "less": "^4.1.1",
     "less-loader": "^7.0.0",
     "remark": "^10.0.0",
