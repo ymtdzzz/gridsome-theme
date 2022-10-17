@@ -47,6 +47,8 @@ ___
 console.log("Sample text")
 ```
 
+ああああああああああああああああああああああああああああああああああああああああああああああああああああ`Sample`ああああああああああああああああああああああああああああああああああああああああああああああああああああ
+
 シンタックスハイライト
 
 ``` js
@@ -68,6 +70,13 @@ console.log(foo(5));
 ## リンク
 
 [テキストリンク](https://www.google.com/)
+
+https://www.webcreatorbox.com/webinfo/learning-vue-nuxt
+
+続いて、送信先IDを元に送信先の connectionID を取得（ dynamodbconnector.findSocketsBySub() ）し、SENDMSGイベントを送信します（ apigatewayconnector.generateSocketMessage() ）。
+
+（Bob）フロントエンド（SENDMSGイベントのハンドリング）
+https://github.com/zeroclock/react-playground/blob/master/src/components/websocket%5Fchat/Chat.tsx
 
 ### 脚注
 
