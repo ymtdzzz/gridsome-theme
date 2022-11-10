@@ -25,6 +25,9 @@
         border: 1px solid #aaa;
         border-radius: 5px;
     }
+    p a {
+        text-decoration: underline;
+    }
 }
 
 @include pc {
