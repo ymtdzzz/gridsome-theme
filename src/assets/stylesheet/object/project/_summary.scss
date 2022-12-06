@@ -1,9 +1,11 @@
+
+
 .p-summary {
     padding: 30px;
     background-color: $articleColor;
-    color: white;
     margin-bottom: 50px;
+    color: white;
     &__text {
-        line-height: 1.8rem;
+        @include textStyle
     }
 }
