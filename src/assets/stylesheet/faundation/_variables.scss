@@ -18,6 +18,28 @@ $categolyColor: #284457;
 $tagsColor: #0D2739;
 $moreColor: #081620;
 
-//テキスト部分の行間の幅
+//本文の行間の高さ
 
 $lineHeight: 1.8rem;
+
+//要約・本文のテキストのスタイル
+
+@mixin textStyle {
+  color: white;
+  line-height: $lineHeight;
+  word-break: break-all;
+  margin-bottom: 30px;
+  p code {
+    padding: 2px;
+    margin: 0 3px;
+    background-color: #285170;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+  }
+  a {
+    text-decoration: underline;
+  }
+  h1 {
+    line-height: 2.2rem;    //h1見出しのみ行の高さ調整
+  }
+}
