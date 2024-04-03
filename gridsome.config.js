@@ -15,6 +15,7 @@ module.exports = {
       { title: "About me", link: "/pages/about/" },
     ],
     socials: [
+      { type: "x-twitter", link: "" },
       { type: "twitter", link: "" },
       { type: "github", link: "" },
     ],
@@ -76,6 +77,7 @@ module.exports = {
   transformers: {
     remark: {
       plugins: [
+        ["gridsome-plugin-remark-mermaid", { theme: "dark" }],
         ["@gridsome/remark-prismjs", { showLineNumbers: true }],
         "remark-inline-links",
         ["remark-toc", { heading: "sommaire" }],
