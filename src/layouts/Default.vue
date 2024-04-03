@@ -25,7 +25,7 @@
           <ul class="social p-social-list">
             <li v-for="page in $static.metadata.socials" :key="page.type" class="p-social-list__item">
               <g-link :class="`u-sc u-sc-${page.type}`" :to="page.link">
-                <i :class="`fa fa-${page.type}`"></i>
+                <i :class="`fa-brands fa-${page.type}`"></i>
               </g-link>
             </li>
           </ul>

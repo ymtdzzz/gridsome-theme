@@ -16,7 +16,7 @@ module.exports = {
     ],
     socials: [
       { type: "github", link: "//github.com/ymtdzzz/" },
-      { type: "twitter", link: "//twitter.com/ymtdzzz" },
+      { type: "x-twitter", link: "//twitter.com/ymtdzzz" },
     ],
     utterances: {
       repo: "ymtdzzz/ymtdzzz-dev",
@@ -84,7 +84,7 @@ module.exports = {
   transformers: {
     remark: {
       plugins: [
-        'gridsome-plugin-remark-mermaid',
+        ["gridsome-plugin-remark-mermaid", { theme: "dark" }],
         ["@gridsome/remark-prismjs", { showLineNumbers: true }],
         "remark-inline-links",
         ["remark-toc", { heading: "Table of Contents" }],
