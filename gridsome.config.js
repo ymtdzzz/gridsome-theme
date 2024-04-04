@@ -84,7 +84,15 @@ module.exports = {
   transformers: {
     remark: {
       plugins: [
-        ["gridsome-plugin-remark-mermaid", { theme: "dark" }],
+        ["gridsome-plugin-remark-mermaid",
+          {
+            theme: "dark",
+            viewport: {
+              width: 1500,
+              height: 1000,
+            },
+          },
+        ],
         ["@gridsome/remark-prismjs", { showLineNumbers: true }],
         "remark-inline-links",
         ["remark-toc", { heading: "Table of Contents" }],
