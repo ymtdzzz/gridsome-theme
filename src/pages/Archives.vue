@@ -1,6 +1,7 @@
 <template>
   <Layout>
     <article class="single">
+      <div class="p-archives-wrap">
       <header><h1 class="c-h1-pagettl u-pages-ttl-space">Archives</h1></header>
       <div class="u-pages-space">
         <dl class="u-color-white">
@@ -14,6 +15,7 @@
           </template>
         </dl>
       </div>
+    </div>
     </article>
   </Layout>
 </template>
