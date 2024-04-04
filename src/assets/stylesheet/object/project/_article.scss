@@ -2,6 +2,14 @@
     padding: 30px;
     background-color: $articleColor;
 }
+
+@include pc {
+    .p-article-wrap {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
 .p-article-ttl {
     text-align: center;
     font-size: 2rem;

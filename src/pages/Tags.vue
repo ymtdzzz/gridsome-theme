@@ -1,17 +1,19 @@
 <template>
   <Layout>
     <article class="single">
-      <header>
-        <h1 class="c-h1-pagettl u-pages-ttl-space">Tags</h1>
-      </header>
-      <div class="u-pages-space">
-        <ul class="list">
-          <li v-for="tag in $page.allTag.edges" :key="tag.node.id" class="u-tags">
-            <span class="c-tag c-tag--tags">
-              <g-link :to="tag.node.path"># {{ tag.node.title }} ({{ tag.node.belongsTo.totalCount }})</g-link>
-            </span>
-          </li>
-        </ul>
+      <div class="p-tags-wrap">
+        <header>
+          <h1 class="c-h1-pagettl u-pages-ttl-space">Tags</h1>
+        </header>
+        <div class="u-pages-space">
+          <ul class="list">
+            <li v-for="tag in $page.allTag.edges" :key="tag.node.id" class="u-tags">
+              <span class="c-tag c-tag--tags">
+                <g-link :to="tag.node.path"># {{ tag.node.title }} ({{ tag.node.belongsTo.totalCount }})</g-link>
+              </span>
+            </li>
+          </ul>
+        </div>
       </div>
     </article>
   </Layout>
