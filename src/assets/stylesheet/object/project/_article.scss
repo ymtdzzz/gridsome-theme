@@ -27,16 +27,6 @@
     @include textStyle
 }
 
-@include pc {
-    .p-article-text {
-        img {
-            max-width: 50vw;
-        }
-    }
-}
-
-
-
 .p-article-tags {
     margin-bottom: 20px;
 }
