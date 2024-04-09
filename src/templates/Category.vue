@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <h1 class="c-h1-pagettl">
-      # {{ $page.category.title }}
+    <h1 class="c-h1-pagettl u-pages-ttl-space">
+      {{ $page.category.title }}
     </h1>
 
     <div class="posts">
