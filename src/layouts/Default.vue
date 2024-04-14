@@ -75,38 +75,6 @@ export default {
     todayYear() {
       return new Date().getFullYear();
     },
-  },
-  metaInfo() {
-    return {
-      meta: [
-        {
-          key: `og:title`,
-          property: `og:title`,
-          content:  this.$static.metadata.siteName
-        },
-        {
-          key: `og:url`,
-          property: `og:url`,
-          content: this.$static.metadata.siteUrl
-        },
-        {
-          key: `og:description`,
-          property: `og:description`,
-          content:  this.$static.metadata.siteDescription
-        },
-        {
-          key: `og:image`,
-          property: `og:image`,
-          content: this.$static.metadata.siteUrl +
-              require(`!!assets-loader!@images/${this.$static.metadata.siteOgImage}`).src
-        },
-        {
-          key: `twitter:card`,
-          property: `twitter:card`,
-          content:  "summary_large_image",
-        },
-      ]
-    }
   }
 
 };

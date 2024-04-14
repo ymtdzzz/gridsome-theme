@@ -65,9 +65,14 @@ export default {
       title: this.$page.post.title,
       meta: [
         {
-          key: "description",
-          name: "description",
-          content: this.$page.post.description,
+          key: `og:url`,
+          property: `og:url`,
+          content: this.$page.metadata.siteUrl + this.$page.post.path
+        },
+        {
+          key: `og:title`,
+          property: `og:title`,
+          content: `${this.$page.post.title} | ${this.$page.metadata.siteName}`,
         },
       ],
     };
@@ -128,6 +133,7 @@ query Post ($id: ID!) {
   }
   metadata {
 		siteUrl
+    siteName
     utterances {
       repo
       issueTerm

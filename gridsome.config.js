@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteUrl: "http://localhost:8080",
+  siteUrl: "https://manami04-gridsome-theme.pages.dev",
   siteName: "sample.dev",
   siteDescription: "サンプルテキスト",
   metadata: {
