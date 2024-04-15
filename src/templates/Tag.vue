@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1 class="c-h1-pagettl"># {{ $page.tag.title }}</h1>
+    <h1 class="c-h1-pagettl u-pages-ttl-space"># {{ $page.tag.title }}</h1>
 
     <div class="posts">
       <PostSummary

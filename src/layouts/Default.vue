@@ -46,8 +46,12 @@
 <static-query>
 query {
   metadata {
+    siteName
+    siteDescription
     siteAuthor
     sitePublished
+    siteOgImage
+    siteUrl
     pages {
       title
       link
@@ -71,6 +75,7 @@ export default {
     todayYear() {
       return new Date().getFullYear();
     },
-  },
+  }
+
 };
 </script>

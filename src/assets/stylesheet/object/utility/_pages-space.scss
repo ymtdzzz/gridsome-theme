@@ -6,3 +6,11 @@
 .u-pages-ttl-space {
     margin-left: 30px;
 }
+
+@include pc {
+    .u-pages-ttl-space {
+        max-width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

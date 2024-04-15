@@ -11,6 +11,7 @@ module.exports = {
   metadata: {
     siteAuthor: "ymtdzzz",
     sitePublished: 2022,
+    siteOgImage: "ogp_image.png",
     pages: [
       { title: "About me", link: "/pages/about/" },
     ],
@@ -117,5 +118,8 @@ module.exports = {
         // options here will be passed to less-loader
       },
     },
+  },
+  chainWebpack(config) {
+    config.resolve.alias.set(`@images`, `@/assets/img`)
   },
 };
